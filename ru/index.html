@@ -1,0 +1,1331 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sass/normalize.css">
+    <link rel="stylesheet" href="sass/font-awesome.min.css">
+    <link rel="stylesheet" href="sass/slick.css">
+    <link rel="stylesheet" href="sass/slick-theme.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>ParkAuto</title>
+</head>
+<body>
+<div class="loader">
+<div class="lds-ripple"><div></div><div></div></div>
+</div>
+<div class="window-popup-container modal">
+    <div class="window-popup">
+        <div class="close_ic">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="popup-head">
+            <div class="h4">Закажите просчет</div>
+            <p>Заполните данные и получите точную цену</p>
+        </div>
+        <div class="popup-body">
+            <div class="calculate_wrap">
+                <form action="success.php" class="js-form" id="popupResult">
+                    <div class="data-field">
+                        <input required name="name" type="text" placeholder="Ваше имя" class="form-control">
+                    </div>
+                    <div class="data-field">
+                        <input required name="tel" type="text" placeholder="+380 (99) 999-99-99" class="form-control tel-input">
+                    </div>
+                    <button class="btn btn-blue">Получить просчет</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="window-popup-container thank">
+    <div class="window-popup">
+        <div class="close_ic">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="popup-head">
+            <div class="h4">Заявка отправлена</div>
+            
+        </div>
+        <div class="popup-body">
+	<p>Спасибо! В ближайшее время с вами свяжется наш менеджер.</p>
+                  </div>
+    </div>
+</div>
+
+
+<div class="top-line">
+    <div class="container">
+        <a href=""><img src="img/logoauto3.png" alt=""></a>
+        <div class="mobile-but">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+<!--        <div class="mobile_menu">-->
+
+<!--        </div>-->
+        <nav>
+            <ul>
+                <li><a href="#popular">ХОДОВЫЕ МОДЕЛИ</a></li>
+                <li><a href="#steps">ЭТАПЫ</a></li>
+                <li><a href="#prices">СТОИМОСТЬ</a></li>
+                <li><a href="#why">ПОЧЕМУ МЫ</a></li>
+                <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+<header>
+    <div class="container">
+<!--        <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>-->
+        <div class="text_content">
+            <div class="inner-txt">
+                <h1>Авто из США<br>с доставкой и ремонтом</h1>
+                <ul>
+                    <li>Помогаем с выбором </li>
+                    <li>Доставляем клиенту </li>
+                    <li>Ремонтируем на своем СТО </li>
+                </ul>
+                <button class="btn btn-blue call-popup">Нужно просчитать стоимость?</button>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="popular" class="section-4">
+    <div class="h3">
+        Популярные модели
+    </div>
+    <div class="container">
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 2200$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>8800$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+                        <img class="car_inner lazy loaded" data-src="img/1.jpeg" alt="Купить VOLKSWAGEN JETTA" title="VOLKSWAGEN JETTA" src="img/1.jpeg" data-was-processed="true">
+                    </div>
+                </div>
+                <div class="name">VOLKSWAGEN JETTA</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Передний</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2015</p>
+                    </div>
+                </div>
+
+                <button class="btn link call-popup">Подберите мне авто</button>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>2700 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>540  $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1300 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li><li>
+                        <span>Ремонт</span>
+                        <span>1100 $</span>
+                    </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>1700 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400 $</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>8800 $</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>11000 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>2200$ (20%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 2100$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>11400$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+                        <picture class="img ">
+                            <source class="" data-srcset="" type="image/webp">
+                            <img class="car_inner lazy loaded" data-src="img/23.jpg" alt="Купить FORD FUSION" title="FORD FUSION" src="img/23.jpg" data-was-processed="true">
+                        </picture>
+                    </div>
+                </div>
+                <div class="name">FORD FUSION</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Передний</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2017</p>
+                    </div>
+                </div>
+
+                <a href="#modal-4" class="open-popup link call-popup">Подберите мне авто</a>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>3200 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>752 $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1300 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li>
+                    <li>
+                        <span>Ремонт</span>
+                        <span>1300 $</span>
+                    </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>3050 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400$</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>11400 $</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>13500 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>2100
+(15%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 3300$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>9900$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+                        <picture class="img ">
+                            <source class="" data-srcset="" type="image/webp">
+                            <img class="car_inner lazy loaded" data-src="img/11.jpg" alt="Купить VOLKSWAGEN PASSAT" title="VOLKSWAGEN PASSAT" src="img/11.jpg" data-was-processed="true">
+                        </picture>
+                    </div>
+                </div>
+                <div class="name">VOLKSWAGEN PASSAT</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Передний</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2015 </p>
+                    </div>
+                </div>
+
+                <a href="#modal-4" class="open-popup link call-popup">Подберите мне авто</a>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>3000 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>630 $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1300 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li>
+                    <li>
+                        <span>Ремонт</span>
+                        <span>1400 $</span>
+                    </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>2100 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400 $</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>9900 $</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>13200 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>3300$
+(25%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 2200$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>9800$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+                        <img class="car_inner lazy loaded" data-src="img/24.jpg" alt="Купить HONDA CIVIC" title="HONDA CIVIC" src="img/24.jpg" data-was-processed="true">
+                    </div>
+                </div>
+                <div class="name">HONDA CIVIC</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Передний</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(images/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2016</p>
+                    </div>
+                </div>
+
+                <a href="#modal-4" class="open-popup link call-popup">Подберите мне авто</a>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>4000 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>540  $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1300 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li><li>
+                    <span>Ремонт</span>
+                    <span>1000 $</span>
+                </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>1500 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400 $</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>9800 $</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>12000 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>2200$ (20%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 3700$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>10800$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+                        <img class="car_inner lazy loaded" data-src="img/2.png" alt="Купить JEEP COMPASS" title="JEEP COMPASS" src="img/2.png" data-was-processed="true">
+                    </div>
+                </div>
+                <div class="name">JEEP COMPASS</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Полный</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2016</p>
+                    </div>
+                </div>
+
+                <a href="#modal-4" class="open-popup link call-popup">Подберите мне авто</a>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>4000 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>600  $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1400 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li>
+                    <li>
+                        <span>Ремонт</span>
+                        <span>1250 $</span>
+                    </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>2100 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400 $</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>10800 $</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>14500 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>3700$ (25%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 2300$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>11700$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+
+                        <img class="car_inner lazy loaded" data-src="img/3.jpg" alt="Купить FORD ESCAPE" title="FORD ESCAPE" src="img/3.jpg" data-was-processed="true">
+
+                    </div>
+                </div>
+                <div class="name">FORD ESCAPE</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Полный</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2016</p>
+                    </div>
+                </div>
+
+                <a href="#modal-4" class="open-popup link call-popup">Подберите мне авто</a>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>4500 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>620  $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1700 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li>
+                    <li>
+                        <span>Ремонт</span>
+                        <span>1200 $</span>
+                    </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>2150 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400 $</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>11700 $</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>14000 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>2300$ (20%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 2700$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>7300$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+                        <picture class="img ">
+                            <source class="" data-srcset="" type="image/webp">
+                            <img class="car_inner lazy loaded" data-src="img/4.jpg" alt="Купить Chevrolet Cruze" title="Chevrolet Cruze" src="img/4.jpg" data-was-processed="true">
+                        </picture>
+                    </div>
+                </div>
+                <div class="name">Chevrolet Cruze</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Передний</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2015</p>
+                    </div>
+                </div>
+
+                <a href="#modal-4" class="open-popup link call-popup">Подберите мне авто</a>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>1800 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>300  $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1300 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li>
+                    <li>
+                        <span>Ремонт</span>
+                        <span>1300 $</span>
+                    </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>1100 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400 $</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>7300$</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>10000 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>2700$ (27%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 2800$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>11700$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+                        <picture class="img ">
+                            <source class="" data-srcset="" type="image/webp">
+                            <img class="car_inner lazy loaded" data-src="img/22.jpg" alt="Купить NISSAN ROGUE" title="NISSAN ROGUE" src="img/22.jpg" data-was-processed="true">
+                        </picture>
+                    </div>
+                </div>
+                <div class="name">NISSAN ROGUE</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Полный</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2016</p>
+                    </div>
+                </div>
+
+                <a href="#modal-4" class="open-popup link call-popup">Подберите мне авто</a>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>4200 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>650  $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1300 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li>
+                    <li>
+                        <span>Ремонт</span>
+                        <span>1400 $</span>
+                    </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>2700 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400 $</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>11700 $</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>14500 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>2800$ (25%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_item">
+            <div class="item">
+                <div class="image">
+                    <div class="info">
+                        <b>Экономия</b>
+                        от 2800$
+                    </div>
+                    <div class="info_total">
+                        Итоговая цена
+                        <b>7700$</b>
+                    </div>
+                    <div class="owl-carusel-2">
+                        <picture class="img ">
+                            <source class="" data-srcset="" type="image/webp">
+                            <img class="car_inner lazy loaded" data-src="img/6.jpg" alt="Купить FORD FOCUS SE" title="FORD FOCUS SE" src="img/6.jpg" data-was-processed="true">
+                        </picture>
+                    </div>
+                </div>
+                <div class="name">FORD FOCUS SE</div>
+                <div class="icons">
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-1.png)" style="background-size: contain; background-image: url(img/ic-1.png);" data-was-processed="true"></div>
+                        <p>Бензин</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-2.png)" style="background-size: contain; background-image: url(img/ic-2.png);" data-was-processed="true"></div>
+                        <p>Автомат</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-3.png)" style="background-size: contain; background-image: url(img/ic-3.png);" data-was-processed="true"></div>
+                        <p>Передний</p>
+                    </div>
+                    <div class="icon">
+                        <div class="lazy img-icon" data-bg="url(img/ic-4.png)" style="background-size: contain; background-image: url(img/ic-4.png);" data-was-processed="true"></div>
+                        <p>2017</p>
+                    </div>
+                </div>
+
+                <a href="#" class="open-popup link call-popup">Подберите мне авто</a>
+
+                <ul class="list">
+                    <li>
+                        <span>Цена авто на аукционе</span>
+                        <span>2200 $</span>
+                    </li>
+                    <li>
+                        <span>Сбор аукциона</span>
+                        <span>490  $</span>
+                    </li>
+                    <li>
+                        <span>Доставка в порт Одессы</span>
+                        <span>1250 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги компании ParkAuto</span>
+                        <span>590 $</span>
+                    </li>
+                    <li>
+                        <span>Ремонт</span>
+                        <span>1000 $</span>
+                    </li>
+                    <li>
+                        <span>Таможенные платежи</span>
+                        <span>1250 $</span>
+                    </li>
+                    <li>
+                        <span>Выгрузка авто в порту Одессы</span>
+                        <span>450 $</span>
+                    </li>
+                    <li>
+                        <span>Услуги таможенного брокера</span>
+                        <span>400 $</span>
+                    </li>
+                </ul>
+
+                <ul class="all">
+                    <li>
+                        <span>ИТОГО АВТО «ПОД КЛЮЧ»</span>
+                        <span>7700 $</span>
+                    </li>
+                    <li>
+                        <span>ЦЕНА В УКРАИНЕ</span>
+                        <span>10500 $</span>
+                    </li>
+                    <li>
+                        <span><b>Экономия с нами составила</b></span>
+                        <span><b>2800$ (28%)</b></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="steps">
+    <div class="h3">
+        8 шагов к вашему автомобилю
+    </div>
+    <div class="container">
+        <div class="steps_wrap">
+            <div class="step_item">
+                <div class="digit">1</div>
+                <div class="step_img">
+                    <img src="img/s1.svg" alt="">
+                </div>
+                <div class="h5">бесплатная консультация</div>
+                <p>подбираем оптимальную<br> модель под ваш запрос</p>
+            </div>
+            <div class="step_item">
+                <div class="digit">2</div>
+
+                <div class="step_img">
+                    <img src="img/s2.svg" alt="">
+                </div>
+                <div class="h5">просчет полной стоимости</div>
+                <p>просчитываем цену авто с учетом доставки, таможни и ремонта</p>
+            </div>
+            <div class="step_item">
+                <div class="digit">3</div>
+
+                <div class="step_img">
+                    <img src="img/s3.svg" alt="">
+                </div>
+                <div class="h5">проверка выбранной машины</div>
+                <p>уцениваем повреждения авто, <br>проверяем документы и продавца</p>
+            </div>
+            <div class="step_item">
+                <div class="digit">4</div>
+
+                <div class="step_img">
+                    <img src="img/s4.svg" alt="">
+                </div>
+                <div class="h5">покупка на аукционе</div>
+                <p>играем на открытых и закрытых аукционах, забираем по оптимальной цене</p>
+            </div>
+            <div class="step_item">
+                <div class="digit">5</div>
+
+                <div class="step_img">
+                    <img src="img/s5.svg" alt="">
+                </div>
+                <div class="h5">доставка клиенту</div>
+                <p>страхуем автомобиль, курируем логистику по суше и по океану</p>
+            </div>
+            <div class="step_item">
+                <div class="digit">6</div>
+
+                <div class="step_img">
+                    <img src="img/s6.svg" alt="">
+                </div>
+                <div class="h5">ремонт автомобиля</div>
+                <p>заказываем необходимые запчасти, ремонтируем на своем СТО</p>
+            </div>
+<!--            <div class="" style="display: flex; justify-content: center; width: 100%;">-->
+                <div class="step_item">
+                    <div class="digit">7</div>
+
+                    <div class="step_img">
+                        <img src="img/s7.svg" alt="">
+                    </div>
+                    <div class="h5">оформление документов</div>
+                    <p>делаем таможенную сертификацию, ставим на учет в МРЭО</p>
+                </div>
+                <div class="step_item">
+                    <div class="digit">8</div>
+
+                    <div class="step_img">
+                        <img src="img/s8.svg" alt="">
+                    </div>
+                    <div class="h5">доставка машины к порогу</div>
+                    <p>привозим готовое авто на номерах с полным пакетом документов</p>
+                </div>
+<!--            </div>-->
+        </div>
+    </div>
+</section>
+
+<section id="calculate">
+    <div class="container">
+        <div class="h3">Подобрать оптимальные модели</div>
+<form action="success2.php" class="js-form" id="popupResult">
+
+        <div class="calculate_wrap">
+            <div class="data-field">
+                <label for="kuz">Тип кузова</label>
+                <select name="type" id="kuz" class="form-control">
+                    <option value="седан ">седан </option><option value="универсал ">универсал </option><option value="хэтчбэк ">хэтчбэк </option><option value="купе ">купе </option><option value="минивэн ">минивэн </option><option value="внедорожник">внедорожник</option>
+                </select>
+            </div>
+            <div class="data-field">
+                <label for="year">Год выпуска (от)</label>
+                <select name="year" id="year" class="form-control">
+                    <option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option>
+                </select>
+            </div>
+            <div class="data-field">
+                <input required name='name' type="text" placeholder="Ваше имя" class="form-control">
+            </div>
+            <div class="data-field">
+                <input required name="tel" type="text" placeholder="+380 (99) 999-99-99" class="form-control tel-input">
+            </div>
+            <button class="btn btn-blue">Получить просчет</button>
+
+        </div>
+</form>
+    </div>
+</section>
+
+<section id="prices">
+    <div class="h3">Стоимость наших услуг</div>
+    <div class="container">
+        <div class="table">
+            <div class="table-head">
+                <div class="tr">
+                    <div class="td lg">Пакет включает в себя</div>
+                    <div class="td hd">
+                        <div class="">Выбери сам</div>
+                        <div class=""><del>$600</del> <span>$290</span></div>
+                    </div>
+                    <div class="td hd">
+                        <div class="">Без ремонта</div>
+                        <div class=""><del>$800</del> <span>$590</span></div>
+                    </div>
+                    <div class="td hd">
+                        <div class="">Под ключ</div>
+                        <div class=""><del>$1100</del> <span>$890</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="table-body">
+                <div class="tr">
+                    <div class="td lg">просчет полной стоимости авто</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">подбор машины на аукционе</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">экспертная оценка повреждений</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">глубокая проверка документов и продавца</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">покупка автомобиля на аукционе</div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+                </div>
+
+                <div class="tr">
+                    <div class="td lg">комплексное курирование логистики</div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+                </div>
+                <div class="tr">
+                    <div class="td lg">прием авто в порту Одессы, растаможка</div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+                </div>
+                <div class="tr">
+                    <div class="td lg">доставка клиенту (любой город Украины)</div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+                    <div class="td"><div class="circle"></div></div>
+                </div>
+                <div class="tr">
+                    <div class="td lg">подбор и заказ запчастей</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">курирование ремонта на нашем СТО</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">курирование сертификации</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">регистрация номера и постановка на учет</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">химчистка салона в подарок</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+                <div class="tr">
+                    <div class="td lg">доставка машины к дому</div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><img src="img/close.svg" alt=""></div>
+                    <div class="td"><div class="circle"></div></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="carl">
+    <div class="container">
+        <div class="carl_wrap">
+            <div class="carl_item">
+                <div class="inner_carl" style="flex-direction: column;">более<br><span class="dig_up">170</span></div>
+                <p>авто за 2016-2020</p>
+            </div>
+            <div class="carl_item">
+                <div class="inner_carl"><span class="dig_up">96</span>%</div>
+                <p>довольных клиентов</p>
+            </div>
+            <div class="carl_item">
+                <div class="inner_carl"><span class="dig_up">1500</span>+</div>
+                <p>купленных электронных<br> сервисов для проверки<br> автомобиля</p>
+            </div>
+            <div class="carl_item">
+                <div class="inner_carl"><span class="dig_up">1000</span>+</div>
+                <p>участий в аукционах </p>
+            </div>
+            <div class="carl_item">
+                <div class="inner_carl"><span class="dig_up">67</span>%</div>
+                <p>клиентов купили 2 и более авто</p>
+            </div>
+            <div class="carl_item">
+                <div class="inner_carl"><span class="dig_up">8</span>+</div>
+                <p>сервисов для проверки<br> автомобилей</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="why">
+    <div class="container">
+        <div class="h3">Почему клиенты выбирают нас</div>
+        <div class="why_wrap">
+            <div class="why-item">
+                <div class="h4">Помощь с выбором</div>
+                <p>мы знаем о машинах всё и поможем выбрать лучший вариант</p>
+            </div>
+            <div class="why-item sec">
+                <div class="h4">Сервис под ключ</div>
+                <p>выигрываем аукцион, курируем логистику, ремонтируем, оформляем</p>
+            </div>
+            <div class="why-item thi">
+                <div class="h4">Собственное СТО</div>
+                <p>лично отвечаем за качество запчастей и ремонт автомобиля</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="back">
+    <div class="container">
+        <div class="h3">У вас есть возможность<br> <span>разбить оплату</span> на поэтапные платежи</div>
+        <button class="btn call-popup">Заказать консультацию</button>
+    </div>
+</section>
+
+<section id="reviews">
+    <div class="container">
+        <div class="h3">Отзывы</div>
+        <div class="wrap_review">
+            <div class="rev_item">
+                <img src="img/r1.webp" alt="">
+            </div>
+            <div class="rev_item">
+                <img src="img/r2.webp" alt="">
+            </div>
+            <div class="rev_item">
+                <img src="img/r3.webp" alt="">
+            </div>
+            <div class="rev_item">
+                <img src="img/r4.webp" alt="">
+            </div>
+            <div class="rev_item">
+                <img src="img/r5.webp" alt="">
+            </div>
+            <div class="rev_item">
+                <img src="img/r6.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="question">
+    <div class="container">
+        <div class="h3">Вопросы - Ответы</div>
+        <div id="accordion">
+            <h3><span>Чем выгодна покупка авто из США?</span><i class="fa fa-times" aria-hidden="true"></i></h3>
+            <div>
+                <p>
+                    В отличие от украинского вторичного рынка, где каждый пытается самостоятельно подкрасить, подрихтовать и придать товарный вид автомобилю, то есть – подготовить его к продаже, в Америке этим профессионально занимаются страховые компании. Они составляют акты обо всех повреждениях и недостатках автомобиля, вся информация прозрачна и заносится в единую базу. Здесь не будет «кота в мешке», вы всегда понимаете, в каком состоянии желаемый автомобиль.
+                </p>
+            </div>
+            <h3><span>Какой минимальный бюджет покупки авто?</span><i class="fa fa-times" aria-hidden="true"></i></h3>
+            <div>
+                <p>
+                    Машины на аукционе действительно стоят от 2000$, однако если речь идет о готовом авто под ключ (покупка на аукционе, логистика, таможня, ремонт), то стоит отталкиваться от минимальной бюджета в 7500$.
+                </p>
+            </div>
+            <h3><span>Есть ли машины в наличии в Украине?</span><i class="fa fa-times" aria-hidden="true"></i></h3>
+            <div>
+                <p>
+                    На данный момент у нас есть 10 автомобилей в наличии, в том числе такие ходовые модели как: VW JETTA, Ford Escape, Nissan Rogue, Mazda 6, Ford Focus...
+                </p>
+            </div>
+            <h3><span>Что такое разбитые платежи?</span><i class="fa fa-times" aria-hidden="true"></i></h3>
+            <div>
+                <p>
+                    Это значит, что вам не нужно платить всю сумму, возможна поэтапная оплата в три платежа: 1) покупка на аукционе 2) логистика и таможня 3) ремонт, сертификация и постановка на учет.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacts">
+        <div class="contacts">
+            <div class="container">
+                <div class="h4">Контакты</div>
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:380631210100">(063) 121-01-00</a></li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:380961210100">(096) 121-01-00</a></li>
+                    <li><i class="fa fa-address-card" aria-hidden="true"></i> <a href="mailto:Parkauto.import@gmail.com">Parkauto.import@gmail.com</a></li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">ТРЦ Plazma, бульвар Шевченкa, 145, Черкассы, Украина</a></li>
+                </ul>
+                <div class="soc">
+<!--                    <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>-->
+                    <a href="https://www.instagram.com/parkauto_ua" style="color: #fff; text-decoration: none;"><i style="color: #ffcb08;" class="fa fa-instagram" aria-hidden="true"></i> parkauto_ua</a>
+                </div>
+            </div>
+        </div>
+        <div class="consult">
+            <div class="container">
+                <div class="h4">Нужна консультация?</div>
+                <form action="success.php" class="js-form" id="popupResult">
+                    <input required name="name" type="text" class="form-control" placeholder="Ваше Имя">
+                    <input required name="tel" type="text" class="form-control tel-input" placeholder="+380 (99) 999-99-99">
+                    <button class="btn">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="wrap_foot">
+<!--            <a href="" class="logo">-->
+<!--&lt;!&ndash;                <img src="img/logoauto3.png" alt="">&ndash;&gt;-->
+<!--            </a>-->
+            <nav>
+                <ul>
+                    <li><a href="#popular">ХОДОВЫЕ МОДЕЛИ</a></li>
+                    <li><a href="#steps">ЭТАПЫ</a></li>
+                    <li><a href="#prices">СТОИМОСТЬ</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#why">ПОЧЕМУ МЫ</a></li>
+                    <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                    <li><a href="#question">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copy">© 2020 Park Auto, All Rights<br> Reserved</div>
+
+    </div>
+</footer>
+
+<script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="js/jquery.spincrement.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<!--<script src="js/main.js"></script>-->
+<script src="js/slick.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
