@@ -1,0 +1,863 @@
+@font-face
+  font-family: 'Gilroy-Light'
+  src: url('../fonts/Gilroy-Light.eot') format('eot'), url('../fonts/Gilroy-Light.woff') format('woff'), url('../fonts/Gilroy-Light.ttf') format('truetype')
+
+@font-face
+  font-family: 'Gilroy-Regular'
+  src: url('../fonts/Gilroy-Regular.eot') format('eot'), url('../fonts/Gilroy-Regular.woff') format('woff'), url('../fonts/Gilroy-Regular.ttf') format('truetype')
+@font-face
+  font-family: 'Gilroy-Medium'
+  src: url('../fonts/Gilroy-Medium.eot') format('eot'), url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype')
+@font-face
+  font-family: 'Gilroy-SemiBold'
+  src: url('../fonts/Gilroy-SemiBold.eot') format('eot'), url('../fonts/Gilroy-SemiBold.woff') format('woff'), url('../fonts/Gilroy-SemiBold.ttf') format('truetype')
+@font-face
+  font-family: 'Gilroy-Bold'
+  src: url('../fonts/Gilroy-Bold.eot') format('eot'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype')
+body
+  margin: 0
+  padding: 0
+  font-family: 'Gilroy-Regular', sans-serif
+
+*
+  box-sizing: border-box
+  outline: none
+img
+  max-width: 100%
+.window-popup-container
+  background-color: rgba(0, 0, 0, 0.8)
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: none
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  overflow: hidden
+  z-index: 99
+  .window-popup
+    width: 100%
+    max-width: 560px
+    padding: 40px
+    background: #fff
+    position: relative
+    position: absolute
+    top: 100px
+    .close_ic
+      cursor: pointer
+      color: #fff
+      position: absolute
+      top: -30px
+      right: -30px
+      font-size: 25px
+    .popup-head
+      margin-bottom: 20px
+      .h4
+        font-size: 32px
+        color: #000
+        font-family: 'Gilroy-Bold', sans-serif
+        text-align: center
+      p
+        font-size: 16px
+        text-align: center
+        margin: 0
+        font-family: 'Gilroy-Regular', sans-serif
+    .popup-body
+      .data-field
+        margin-bottom: 20px
+      button
+        width: 100%
+      label
+      color: rgba(0, 0, 0, .7)
+      font-size: 14px
+      input, select
+        width: 100%
+        padding: 0px 20px
+      select
+        width: 100%
+      select.form-control
+        background-image: linear-gradient(45deg, transparent 50%, blue 50%), linear-gradient(135deg, blue 50%, transparent 50%)
+        background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0
+        background-size: 5px 5px, 5px 5px, 2.5em 2.5em
+        background-repeat: no-repeat
+        -webkit-appearance: none
+        -moz-appearance: none
+
+
+
+.window-popup-container.active
+  display: flex
+p, ul
+  margin: 0
+  padding: 0
+  list-style: none
+.container
+  width: 95%
+  max-width: 1200px
+  margin: 0 auto
+button.btn, a.btn
+  display: block
+  color: #000
+  text-decoration: none
+  font-size: 20px
+  font-family: 'Arial',Arial,sans-serif
+  border: none
+  line-height: 24px
+  font-weight: 600
+  border-width: 1px
+  text-align: center
+  border-radius: 30px
+  cursor: pointer
+  height: 55px
+  background-color: #ffcb08
+.top-line
+  padding: 20px 0px
+  z-index: 999
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  width: 100%
+  background: #ffcb08
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    ul
+      display: flex
+      li
+        margin-right: 15px
+        &:last-child
+          margin-right: 0
+      a
+        font-size: 14px
+        color: #000
+        font-family: 'Gilroy-Regular', sans-serif
+        text-decoration: none
+
+header
+  background: #000 url("../img/head.jpg") no-repeat 50% 100% / cover
+  height: 100vh
+  //padding-top: 50px
+  padding-bottom: 50px
+  overflow: hidden
+  .container
+    padding-top: 50px
+    height: 100%
+  h1
+    color: #ffffff
+    font-size: 52px
+    margin: 0
+    font-family: 'Gilroy-Bold', sans-serif
+  .text_content
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    height: 100%
+    button
+      width: 400px
+
+  ul
+    list-style-image: url("../img/tick.svg")
+    margin-top: 20px
+    margin-bottom: 40px
+    padding-left: 25px
+    li
+      color: #ffffff
+      font-size: 20px
+      font-family: 'Gilroy-Regular', sans-serif
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+
+  .logo
+    //padding-top: 50px
+    text-align: center
+    display: block
+.section-4
+  padding: 80px 0px
+  .h3
+    text-align: center
+    font-family: 'Gilroy-Bold', sans-serif
+    font-size: 42px
+    margin-bottom: 50px
+  .container
+    max-width: 1200px
+    //display: flex
+    //justify-content: space-between
+  .wrap_item
+    padding-right: 10px
+  .item
+    //width: 390px
+    display: block
+    //width: 30%
+    //float: left
+    //margin: 30px 17px 0
+    //margin-right: 20px
+    border: 1px solid #f2f2f2
+    box-shadow: 0px 18px 20px rgba(74, 72, 67, 0.09)
+    border-radius: 6px
+    overflow: hidden
+
+
+  .image
+    height: 273px
+    position: relative
+
+    .info, .info_total
+      position: absolute
+      left: 10px
+      top: 10px
+      text-align: center
+      background: #ffcb08
+      padding: 6px
+      z-index: 100
+      font-size: 14px
+      color: #fff
+      border-radius: 3px
+
+    .info b
+      display: block
+
+    .info_total
+      b
+        display: block
+
+      background-color: rgba(16, 143, 234, 1)
+      left: auto
+      right: 10px
+      top: auto
+      bottom: 35px
+
+  .name
+    text-align: center
+    font-size: 25px
+    font-weight: 700
+    padding: 0 0 23px
+    font-family: 'Gilroy-Bold', sans-serif
+
+
+  .icons
+    overflow: hidden
+
+  .icon
+    width: 25%
+    float: left
+    text-align: center
+    font-size: 13px
+
+  .img-icon
+    width: 31px
+    height: 32px
+    margin: 0 auto 5px
+
+.img-icon
+  background-repeat: no-repeat
+  background-position: center
+
+.section-4
+  .list
+    overflow: hidden
+    padding: 30px 21px 12px
+
+    li
+      overflow: hidden
+      padding: 0 0 8px
+
+      span
+        &:nth-child(1)
+          float: left
+          width: 255px
+          font-size: 15px
+
+        &:nth-child(2)
+          float: right
+          width: 93px
+          text-align: right
+          font-size: 16px
+
+  .all
+    padding: 20px 21px 12px
+    background: rgb(222, 230, 241)
+
+    li
+      overflow: hidden
+      padding: 0 0 10px
+
+      span
+        &:nth-child(1)
+          float: left
+          width: 200px
+          font-size: 15px
+
+        &:nth-child(2)
+          float: right
+          width: 100px
+          text-align: right
+
+  .img
+    height: 248px
+    display: block
+
+  .car_inner
+    width: 100%
+    display: block
+    height: 100%
+    object-fit: contain
+    margin: auto
+
+  .owl-next
+    position: absolute
+    font-size: 36px
+    width: 26px
+    height: 48px
+    right: 0px
+    top: 50%
+    margin-top: -20px
+    color: rgb(255, 255, 255)
+
+  .owl-prev
+    position: absolute
+    font-size: 36px
+    width: 26px
+    height: 48px
+    left: 7px
+    top: 50%
+    margin-top: -20px
+    color: rgb(255, 255, 255)
+
+  .owl-next:hover, .owl-prev:hover
+    opacity: 0.8
+
+  .link
+    text-decoration: none
+    background-color: #ffcb08
+    outline: none
+    padding: 18px 0
+    display: block
+    border-radius: 10px
+    text-align: center
+    font-size: 15px
+    font-weight: 700
+    color: #000
+    box-shadow: 0px 15px 20px rgba(33, 135, 249, 0.25)
+    border: none
+    overflow: hidden
+    position: relative
+    width: 86%
+    margin: 20px 27px 0px
+    text-transform: uppercase
+
+  .more-link
+    display: block
+    padding: 19px
+    width: 200px
+    margin: 65px auto
+    background: #fff
+    color: #1091eb
+    text-align: center
+    border-radius: 5px
+    border: 2px solid #1091eb
+    font-weight: 600
+    font-size: 15px
+
+    i
+      padding: 0 4px
+
+    &:hover
+      color: #fa8311
+      border: 2px solid #fa8311
+#steps
+  background: #09222f
+  padding: 70px 0px
+  .container
+    max-width: 1165px
+
+  .h3
+    text-align: center
+    font-family: 'Gilroy-Bold', sans-serif
+    font-size: 42px
+    margin-bottom: 80px
+    color: #ffffff
+  .steps_wrap
+    //background: url("../img/Group_75.svg") no-repeat
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .step_item
+      width: 360px
+      text-align: center
+      margin: 0px 10px
+      margin-bottom: 150px
+      position: relative
+      .digit
+        color: #ffffff
+        width: 30px
+        height: 30px
+        line-height: 30px
+        border: 1px solid #ffffff
+        border-radius: 50%
+        position: absolute
+        top: 0
+        left: 0
+      .step_img
+        margin-bottom: 30px
+      .h5
+        color: #ffffff
+        font-size: 20px
+        font-family: 'Gilroy-Bold', sans-serif
+        margin-bottom: 10px
+      p
+        color: #ffffff
+        font-size: 20px
+        font-family: 'Gilroy-Regular', sans-serif
+
+.form-control
+  font-size: 20px
+  color: #555555
+  background-image: none
+  height: 50px
+  border: 1px solid #ffcb08
+  font-family: 'Gilroy-Regular', sans-serif
+  border-radius: 40px
+
+#calculate
+  padding: 70px 0px
+  .container
+    max-width: 850px
+  .h3
+    color: #000000
+    font-size: 42px
+    text-align: center
+    font-family: 'Gilroy-Bold', sans-serif
+    margin-bottom: 50px
+  .calculate_wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    button
+      width: 390px
+      margin: 0 auto
+    .data-field
+      margin-bottom: 35px
+      width: 50%
+      padding: 0px 20px
+      label
+        color: rgba(0, 0, 0, .7)
+        font-size: 14px
+      input, select
+        width: 100%
+        padding: 0px 20px
+      select
+        width: 100%
+      select.form-control
+        background-image: linear-gradient(45deg, transparent 50%, #ffcb08 50%), linear-gradient(135deg, #ffcb08 50%, transparent 50%)
+        background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0
+        background-size: 5px 5px, 5px 5px, 2.5em 2.5em
+        background-repeat: no-repeat
+        -webkit-appearance: none
+        -moz-appearance: none
+#prices
+  background: #f3f4f5
+  padding: 80px 0px
+  .container
+    //overflow-x: scroll
+    //max-width: 960px
+  .h3
+    color: #000000
+    font-size: 42px
+    text-align: center
+    font-family: 'Gilroy-Bold', sans-serif
+    margin-bottom: 50px
+  .circle
+    width: 18px
+    height: 18px
+    background: #ffcb08
+    border-radius: 50%
+    margin: 0 auto
+  .table
+    max-width: 960px
+    //width: 960px
+    overflow-x: hidden
+    margin: 0 auto
+    border: 1px solid #ccc
+    .table-head
+      span
+        font-family: 'Gilroy-Bold', sans-serif
+      .hd
+        text-align: center
+    .table-head
+      .tr
+        border-bottom: 1px solid #ccc!important
+        .td
+          padding: 20px
+          color: #ffcb08
+          font-size: 30px
+          del
+            color: #000
+          span
+            font-family: 'Gilroy-Bold', sans-serif
+            color: #000
+        .td.lg
+          font-size: 32px
+    .tr
+      display: flex
+      border-bottom: 1px solid #ccc
+      &:last-child
+        border-bottom: 0
+      .td
+        padding: 10px 20px
+        width: 30%
+        text-align: center
+        border-right: 1px solid #ccc
+        &:last-child
+          border-right: none
+      .td.lg
+        text-align: left
+      .td.lg
+        width: 40%
+
+
+#carl
+  background: url('../img/carl.png') no-repeat center / cover
+  padding: 80px 0px
+  position: relative
+  &:before
+    position: absolute
+    width: 100%
+    height: 100%
+    content: ""
+    display: block
+    left: 0
+    top: 0
+    background: #202937
+    opacity: .9
+  .carl_wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .carl_item
+      width: 33%
+      text-align: center
+      z-index: 99
+      margin: 0 auto
+      margin-bottom: 25px
+      .inner_carl
+        margin: 0 auto
+        color: #ffcb08
+        border: 2px solid #ffcb08
+        border-radius: 50%
+        width: 120px
+        height: 120px
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 20px
+        span
+          font-size: 35px
+          font-family: 'Gilroy-Bold', sans-serif
+
+
+      p
+        color: #ffffff
+        max-width: 250px
+        text-align: center
+        margin: 0 auto
+        margin-top: 15px
+        font-size: 18px
+        font-family: 'Gilroy-Bold', sans-serif
+
+
+
+
+
+
+#why
+  padding: 90px 0px
+  .h3
+    color: #000000
+    font-size: 42px
+    text-align: center
+    font-family: 'Gilroy-Bold', sans-serif
+    margin-bottom: 70px
+  .why_wrap
+    display: flex
+    justify-content: space-between
+    .why-item.sec
+      background: url(../img/w2.svg) no-repeat center
+    .why-item.thi
+      background: url(../img/w3.svg) no-repeat center
+    .why-item
+      max-width: 350px
+      background: url(../img/w1.svg) no-repeat center
+      min-height: 320px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      .h4
+        color: #000000
+        text-align: center
+        font-size: 24px
+        font-family: 'Gilroy-Bold', sans-serif
+        margin-bottom: 30px
+      p
+        color: #000000
+        text-align: center
+        font-size: 20px
+        font-family: 'Gilroy-Light', sans-serif
+
+#back
+  background: url("../img/back.jpg") no-repeat center / cover
+  padding-top: 90px
+  padding-bottom: 70px
+  .h3
+    text-align: center
+    color: #ffffff
+    font-size: 42px
+    font-family: 'Gilroy-Bold', sans-serif
+    margin-bottom: 60px
+    span
+      color: #ffcb08
+  button
+    width: 400px
+    margin: 0 auto
+
+#question
+  padding: 80px 0px
+  background: #f3f4f5
+  .h3
+    color: #000000
+    font-size: 42px
+    text-align: center
+    font-family: 'Gilroy-Bold', sans-serif
+    margin-bottom: 70px
+
+
+  #accordion
+    h3
+      font-size: 24px
+      font-family: 'Gilroy-Bold', sans-serif
+      color: #000
+      cursor: pointer
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-top: 20px
+      border-top: 1px solid #eee
+      //animation: all .3s ease
+      i
+        animation: all .3s ease
+      span.ui-accordion-header-icon
+        display: none
+    h3.ui-accordion-header-active
+      i
+        transform: rotate(-45deg)
+        color: #ffcb08
+    p
+      font-family: 'Gilroy-Light', sans-serif
+      font-size: 20px
+#reviews
+  padding: 80px 0px
+  .h3
+    color: #000000
+    font-size: 42px
+    text-align: center
+    font-family: 'Gilroy-Bold', sans-serif
+    margin-bottom: 70px
+  .rev_item
+    padding: 0px 20px
+    img
+      margin: 0 auto
+#contacts
+  display: flex
+
+  .contacts
+    width: 50%
+    background: #09222f
+    padding: 60px 0px
+    .soc
+      font-size: 30px
+      i
+        margin-right: 15px
+        color: #ffffff
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        margin-bottom: 20px
+        display: flex
+        align-items: center
+        i
+          width: 40px
+          color: #ffffff
+          font-size: 20px
+        a
+          text-decoration: none
+          color: #ffffff
+          font-size: 20px
+
+    .h4
+      font-size: 42px
+      font-family: 'Gilroy-Bold', sans-serif
+      color: #ffffff
+      margin-bottom: 50px
+    .container
+      max-width: 440px
+      margin: 0 auto
+  .consult
+    width: 50%
+    padding: 60px 0px
+    input
+      width: 400px
+      margin: 0 auto
+      padding: 0px 20px
+      margin-bottom: 20px
+    button
+      width: 290px
+      margin: 0 auto
+    form
+      text-align: center
+    .h4
+      color: #181818
+      font-size: 42px
+      font-family: 'Gilroy-Bold', sans-serif
+      margin-bottom: 50px
+    .container
+      max-width: 440px
+      margin: 0 auto
+footer
+  padding: 80px 0px
+  padding-bottom: 40px
+  .wrap_foot
+    display: flex
+    justify-content: space-between
+    nav
+      display: flex
+    ul
+      margin: 0
+      padding: 0
+      &:first-child
+        margin-right: 40px
+      li
+        margin-bottom: 10px
+        a
+          color: #000000
+          font-family: 'Gilroy-Light', sans-serif
+          font-size: 24px
+          text-decoration: none
+  .copy
+    text-align: center
+    font-family: 'Gilroy-Light', sans-serif
+    font-size: 20px
+    margin-top: 50px
+.mobile-but
+  display: none
+  i
+    font-size: 25px
+
+@media all and (max-width: 992px)
+  .top-line nav
+    position: fixed
+    background: #fff
+    top: -800px
+    left: 0
+    transition: all .5s ease
+    right: 0
+  .top-line nav.active
+    top: 65px
+  .top-line .container ul
+    flex-direction: column
+    li
+      margin-right: 0
+      margin-bottom: 10px
+      text-align: center
+  .mobile-but
+    display: block
+  #contacts
+    flex-direction: column
+  #contacts .contacts
+    width: 100%
+  #contacts .consult
+    width: 100%
+@media all and (max-width: 768px)
+  #carl .carl_wrap .carl_item
+    width: 50%
+  .window-popup-container .window-popup
+    width: 90%
+    padding: 15px
+    padding-top: 40px
+    padding-bottom: 30px
+    top: 100px
+  .window-popup-container .window-popup .close_ic
+    right: 10px
+    top: 5px
+  .window-popup-container .window-popup .close_ic i
+    color: #000
+
+  .window-popup-container .window-popup
+    max-height: 80%
+    overflow-y: auto
+
+  footer .wrap_foot
+    flex-direction: column
+    align-items: center
+  footer .wrap_foot nav
+    margin-top: 40px
+    flex-direction: column
+  #why .why_wrap
+    flex-direction: column
+    align-items: center
+  #prices .container
+    overflow-x: scroll
+  #calculate .calculate_wrap button
+    width: 100%
+  #calculate .calculate_wrap .data-field
+    padding: 0px
+  #prices .table
+    width: 720px
+  #calculate .calculate_wrap .data-field
+    width: 100%
+@media all and (max-width: 576px)
+  #carl .carl_wrap .carl_item
+    width: 100%
+  .section-4 .list li
+    padding: 0px
+    display: flex
+    align-items: center
+  .section-4 .all
+    padding: 10px
+  .section-4 .name
+    padding-bottom: 10px
+  .section-4 .list
+    padding: 10px
+  .section-4 .link
+    box-shadow: none
+  #contacts .consult input
+    width: 100%
+  #contacts .consult button
+    width: 100%
+
+@media all and (max-width: 460px)
+  .top-line
+    .container
+      width: 90%
+  .section-4 .h3, #steps .h3, #calculate .h3, #prices .h3, #why .h3, #back .h3, #reviews .h3, #question .h3, #contacts .contacts .h4, #contacts .consult .h4
+    font-size: 32px
+  #back button
+    width: 100%
+  header .text_content button
+    width: auto
+    //height: 70px
+    padding: 0px 10px
+  header h1
+    font-size: 40px
+
+
+
+
